@@ -8,9 +8,29 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #1e3c72, #2a5298);
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      background-attachment: fixed;
       color: white;
       animation: fadeIn 1s ease-in;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(circle at 50% 50%, rgba(0,255,0,0.15) 0%, transparent 70%), url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+      z-index: -1;
+      animation: lightning 5s infinite;
+    }
+
+    @keyframes lightning {
+      0%, 100% { opacity: 1; }
+      45%, 55% { opacity: 0.5; }
+      48%, 52% { opacity: 0.2; }
     }
 
     header {
@@ -35,16 +55,17 @@
       padding: 20px;
       border-radius: 15px;
       max-width: 800px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 255, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .section:hover {
-      transform: scale(1.02);
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
     }
 
     h2 {
-      color: #ffeb3b;
+      color: #aaff00;
     }
 
     ul li {
