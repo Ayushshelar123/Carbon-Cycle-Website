@@ -2,123 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Carbon Cycle</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      animation: fadeIn 1s ease-in;
     }
 
     header {
-      background-color: #333;
-      color: white;
-      padding: 30px 20px;
       text-align: center;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-size: 2.5rem;
+      font-weight: bold;
+      animation: slideDown 1s ease-in-out;
     }
 
-    h1 {
-      margin: 0;
+    sub {
+      display: block;
+      font-size: 1.1rem;
+      margin-top: 10px;
+      color: #ccc;
     }
 
-    .container {
-      max-width: 900px;
+    .section {
+      background-color: rgba(255, 255, 255, 0.1);
       margin: 30px auto;
       padding: 20px;
+      border-radius: 15px;
+      max-width: 800px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
     }
 
-    .box {
-      background-color: white;
-      border: 1px solid #ccc;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    .section:hover {
+      transform: scale(1.02);
     }
 
     h2 {
-      color: #333;
+      color: #ffeb3b;
     }
 
-    ul {
-      padding-left: 20px;
+    ul li {
+      margin-bottom: 8px;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #eee;
-      font-size: 14px;
+      font-size: 1.1rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin-top: 50px;
     }
 
-    a {
-      color: #0066cc;
-      text-decoration: none;
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
-    a:hover {
-      text-decoration: underline;
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>The Carbon Cycle</h1>
-    <p>Understanding how carbon moves through our Earth</p>
+    The Carbon Cycle
+    <sub>How carbon flows through our planet</sub>
   </header>
 
-  <div class="container">
-    <div class="box">
-      <h2>1. What is the Carbon Cycle?</h2>
-      <p>The carbon cycle describes how carbon atoms move through the Earth's systems — air, water, soil, plants, animals, and rocks. It supports life and helps regulate Earth's temperature.</p>
-    </div>
+  <div class="section">
+    <h2>1. What is the Carbon Cycle?</h2>
+    <p>The carbon cycle is the process by which carbon moves between the atmosphere, oceans, soil, and living organisms. It’s essential for life on Earth.</p>
+  </div>
 
-    <div class="box">
-      <h2>2. Main Steps in the Carbon Cycle</h2>
-      <ul>
-        <li><strong>Photosynthesis:</strong> Plants take in CO₂ and produce oxygen and food.</li>
-        <li><strong>Respiration:</strong> Living things release CO₂ during breathing.</li>
-        <li><strong>Decomposition:</strong> Dead organisms break down and return carbon to the soil and atmosphere.</li>
-        <li><strong>Combustion:</strong> Burning fossil fuels releases stored carbon.</li>
-        <li><strong>Ocean Absorption:</strong> Oceans absorb a large amount of CO₂ from the atmosphere.</li>
-      </ul>
-    </div>
+  <div class="section">
+    <h2>2. Main Steps in the Carbon Cycle</h2>
+    <ul>
+      <li><strong>Photosynthesis:</strong> Plants use carbon dioxide to make food.</li>
+      <li><strong>Respiration:</strong> Animals and plants release carbon dioxide.</li>
+      <li><strong>Decomposition:</strong> Carbon returns to the soil from dead organisms.</li>
+      <li><strong>Combustion:</strong> Burning fossil fuels releases carbon dioxide.</li>
+      <li><strong>Ocean Uptake:</strong> Oceans absorb and store carbon from the air.</li>
+    </ul>
+  </div>
 
-    <div class="box">
-      <h2>3. Why is the Carbon Cycle Important?</h2>
-      <p>Without the carbon cycle, Earth would be uninhabitable. It keeps CO₂ levels balanced. Disrupting this cycle (by pollution, deforestation, etc.) can lead to dangerous climate change.</p>
-    </div>
+  <div class="section">
+    <h2>3. Why Is the Carbon Cycle Important?</h2>
+    <p>It regulates Earth’s climate by controlling carbon dioxide levels. Too much carbon leads to global warming and climate change.</p>
+  </div>
 
-    <div class="box">
-      <h2>4. Human Impact on the Carbon Cycle</h2>
-      <p>Humans affect the carbon cycle by burning fossil fuels, cutting trees, and polluting the oceans. These actions increase atmospheric CO₂ and cause global warming.</p>
-    </div>
+  <div class="section">
+    <h2>4. Human Impact</h2>
+    <p>Burning fossil fuels and deforestation increase carbon in the atmosphere. We must reduce emissions to keep balance in the cycle.</p>
+  </div>
 
-    <div class="box">
-      <h2>5. How Can We Help?</h2>
-      <ul>
-        <li>Use renewable energy sources like solar and wind.</li>
-        <li>Plant trees and conserve forests.</li>
-        <li>Recycle and reduce waste.</li>
-        <li>Use eco-friendly transport — walk, cycle, or take public transit.</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <h2>6. Sources & Learn More</h2>
-      <ul>
-        <li><a href="https://climatekids.nasa.gov/carbon-cycle/" target="_blank">NASA Climate Kids: The Carbon Cycle</a></li>
-        <li><a href="https://www.noaa.gov/education/resource-collections/climate/carbon-cycle" target="_blank">NOAA Education: Carbon Cycle</a></li>
-        <li><a href="https://www.britannica.com/science/carbon-cycle" target="_blank">Britannica: Carbon Cycle</a></li>
-      </ul>
-    </div>
+  <div class="section">
+    <h2>5. How to Help</h2>
+    <ul>
+      <li>Plant more trees 🌳</li>
+      <li>Use renewable energy ⚡</li>
+      <li>Recycle and reduce waste ♻️</li>
+      <li>Conserve energy at home 🔋</li>
+    </ul>
   </div>
 
   <footer>
-    Made by Ayush | Project for Earth & Environment Science Topic #5
+    Made by Gaurav
   </footer>
-
 </body>
 </html>
